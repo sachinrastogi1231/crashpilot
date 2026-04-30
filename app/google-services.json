@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "553260485841",
+    "project_id": "crashpilot-4d447",
+    "storage_bucket": "crashpilot-4d447.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553260485841:android:d77b13fb970e9202c409f0",
+        "android_client_info": {
+          "package_name": "com.gl.hack26.crashpilot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUAYkHo2JFBjaIfSy_FWmEhzhsd4gBZB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
