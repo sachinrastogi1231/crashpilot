@@ -3,12 +3,15 @@ package com.gl.hack26.crashpilot.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.gl.hack26.crashpilot.BuildConfig
 import com.gl.hack26.crashpilot.Product
 import com.gl.hack26.crashpilot.repository.ProductRepository
 
 class ProductViewModel : ViewModel() {
     private val repository = ProductRepository()
-    
+
+    var intentionalCrashesEnabled: Boolean = BuildConfig.DEBUG
+
     private val _products = MutableLiveData<List<Product>>()
     val products: LiveData<List<Product>> get() = _products
 
@@ -21,6 +24,10 @@ class ProductViewModel : ViewModel() {
     }
 
     fun triggerCrash(productId: Int, productName: String?) {
+        if (!intentionalCrashesEnabled) {
+            return
+        }
+
         when (productId % 3) {
             0 -> {
                 // ArithmeticException
@@ -39,6 +46,10 @@ class ProductViewModel : ViewModel() {
     }
 
     fun triggerListCrash() {
+        if (!intentionalCrashesEnabled) {
+            return
+        }
+
         val nullString: String? = null
         nullString!!.length // Trigger NPE
     }
