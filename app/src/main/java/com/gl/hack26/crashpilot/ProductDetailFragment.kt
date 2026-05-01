@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import coil.load
 import coil.transform.CircleCropTransformation
+import com.gl.hack26.crashpilot.BuildConfig
 import com.gl.hack26.crashpilot.viewmodel.ProductViewModel
 
 class ProductDetailFragment : Fragment() {
@@ -48,8 +49,14 @@ class ProductDetailFragment : Fragment() {
             transformations(CircleCropTransformation())
         }
 
-        btnCrash.setOnClickListener {
-            viewModel.triggerCrash(productId, productName)
+        // Only show crash trigger button in debug builds
+        if (BuildConfig.DEBUG) {
+            btnCrash.visibility = View.VISIBLE
+            btnCrash.setOnClickListener {
+                viewModel.triggerCrash(productId, productName)
+            }
+        } else {
+            btnCrash.visibility = View.GONE
         }
     }
 }

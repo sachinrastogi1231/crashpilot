@@ -3,6 +3,7 @@ package com.gl.hack26.crashpilot.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.gl.hack26.crashpilot.BuildConfig
 import com.gl.hack26.crashpilot.Product
 import com.gl.hack26.crashpilot.repository.ProductRepository
 
@@ -21,6 +22,10 @@ class ProductViewModel : ViewModel() {
     }
 
     fun triggerCrash(productId: Int, productName: String?) {
+        if (!BuildConfig.DEBUG) {
+            // Prevent intentional crashes in production builds
+            return
+        }
         when (productId % 3) {
             0 -> {
                 // ArithmeticException
@@ -39,6 +44,10 @@ class ProductViewModel : ViewModel() {
     }
 
     fun triggerListCrash() {
+        if (!BuildConfig.DEBUG) {
+            // Prevent intentional crashes in production builds
+            return
+        }
         val nullString: String? = null
         nullString!!.length // Trigger NPE
     }
