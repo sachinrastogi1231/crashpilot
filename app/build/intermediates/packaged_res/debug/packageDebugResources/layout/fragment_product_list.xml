@@ -9,22 +9,11 @@
         android:id="@+id/recyclerView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/btnListCrash"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:padding="8dp"
         android:clipToPadding="false"/>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnListCrash"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Trigger List NPE"
-        android:layout_margin="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:backgroundTint="@color/error"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

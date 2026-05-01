@@ -10,8 +10,6 @@ color secondary
 color secondary_variant
 color surface
 id action_productListFragment_to_productDetailFragment
-id btnCrash
-id btnListCrash
 id ivDetailProduct
 id ivProduct
 id nav_graph

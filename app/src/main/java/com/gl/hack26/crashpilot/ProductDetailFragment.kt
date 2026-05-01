@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
@@ -30,7 +29,6 @@ class ProductDetailFragment : Fragment() {
         val ivProduct = view.findViewById<ImageView>(R.id.ivDetailProduct)
         val tvName = view.findViewById<TextView>(R.id.tvDetailName)
         val tvDescription = view.findViewById<TextView>(R.id.tvDetailDescription)
-        val btnCrash = view.findViewById<Button>(R.id.btnCrash)
 
         val productId = arguments?.getInt("PRODUCT_ID", 0) ?: 0
         val productName = arguments?.getString("PRODUCT_NAME")
@@ -38,18 +36,17 @@ class ProductDetailFragment : Fragment() {
         val imageResId = arguments?.getInt("IMAGE_RES", android.R.drawable.ic_menu_report_image) ?: android.R.drawable.ic_menu_report_image
 
         tvName.text = productName
-        tvDescription.text = "This $productName is from $storeInfo. It is highly experimental and might cause your system to crash!"
+        tvDescription.text = "This $productName is from $storeInfo. Loading extended product specifications and market analysis..."
         
+        // Trigger a higher-probability crash when viewing details
+        viewModel.triggerRandomCrash(productId, isDetailView = true)
+
         // Use Coil for random image
         ivProduct.load("https://picsum.photos/seed/${productId}/400/400") {
             crossfade(true)
             placeholder(imageResId)
             error(imageResId)
             transformations(CircleCropTransformation())
-        }
-
-        btnCrash.setOnClickListener {
-            viewModel.triggerCrash(productId, productName)
         }
     }
 }
