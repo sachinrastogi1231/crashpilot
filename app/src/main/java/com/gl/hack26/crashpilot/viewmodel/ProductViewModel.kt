@@ -9,9 +9,7 @@ import com.gl.hack26.crashpilot.repository.ProductRepository
 
 class ProductViewModel : ViewModel() {
     private val repository = ProductRepository()
-
-    var intentionalCrashesEnabled: Boolean = BuildConfig.DEBUG
-
+    
     private val _products = MutableLiveData<List<Product>>()
     val products: LiveData<List<Product>> get() = _products
 
@@ -24,10 +22,10 @@ class ProductViewModel : ViewModel() {
     }
 
     fun triggerCrash(productId: Int, productName: String?) {
-        if (!intentionalCrashesEnabled) {
+        if (!BuildConfig.DEBUG) {
+            // Crash triggers are only enabled in debug builds
             return
         }
-
         when (productId % 3) {
             0 -> {
                 // ArithmeticException
@@ -46,10 +44,10 @@ class ProductViewModel : ViewModel() {
     }
 
     fun triggerListCrash() {
-        if (!intentionalCrashesEnabled) {
+        if (!BuildConfig.DEBUG) {
+            // Crash triggers are only enabled in debug builds
             return
         }
-
         val nullString: String? = null
         nullString!!.length // Trigger NPE
     }
