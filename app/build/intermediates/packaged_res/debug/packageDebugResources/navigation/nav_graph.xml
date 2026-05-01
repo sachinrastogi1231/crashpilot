@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/productListFragment">
+
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="com.gl.hack26.crashpilot.ProductListFragment"
+        android:label="CrashPilot List"
+        tools:layout="@layout/fragment_product_list">
+        <action
+            android:id="@+id/action_productListFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.gl.hack26.crashpilot.ProductDetailFragment"
+        android:label="Product Details"
+        tools:layout="@layout/fragment_product_detail">
+        <argument
+            android:name="PRODUCT_ID"
+            app:argType="integer" />
+        <argument
+            android:name="PRODUCT_NAME"
+            app:argType="string" />
+        <argument
+            android:name="STORE_INFO"
+            app:argType="string" />
+        <argument
+            android:name="IMAGE_RES"
+            app:argType="integer" />
+    </fragment>
+</navigation>

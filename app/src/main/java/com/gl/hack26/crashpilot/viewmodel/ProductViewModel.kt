@@ -23,23 +23,27 @@ class ProductViewModel : ViewModel() {
     fun triggerCrash(productId: Int, productName: String?) {
         when (productId % 3) {
             0 -> {
-                // ArithmeticException
-                val x = 10 / 0
+                // Realistic ArithmeticException: Rating calculation with zero reviews
+                val totalRating = 50
+                val reviewCount = 0
+                val averageRating = totalRating / reviewCount
             }
             1 -> {
-                // IndexOutOfBoundsException
-                val list = listOf(1)
-                val y = list[10]
+                // Realistic IndexOutOfBoundsException: Accessing a 'featured' item from an empty promotion list
+                val promotions = listOf<String>()
+                val featuredPromo = promotions[0]
             }
             else -> {
-                // Custom RuntimeException
-                throw RuntimeException("Intentional Crash in CrashPilot App: $productName triggered it!")
+                // Realistic NumberFormatException: Parsing price from a localized string without proper handling
+                val priceString = "$99.99"
+                val price = priceString.toDouble() 
             }
         }
     }
 
     fun triggerListCrash() {
-        val nullString: String? = null
-        nullString!!.length // Trigger NPE
+        // Realistic NullPointerException: Repository returns null for an invalid ID, and we force use it
+        val product = repository.getProductById(-1)
+        val nameLength = product!!.product_name.length
     }
 }
