@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.5.1" type="partial_results">
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="com.gl.hack26.crashpilot.MainActivity"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <location id="R.color.surface"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="10"
+            column="12"
+            startOffset="387"
+            endLine="10"
+            endColumn="26"
+            endOffset="401"/>
+        <location id="R.color.error"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="11"
+            column="12"
+            startOffset="429"
+            endLine="11"
+            endColumn="24"
+            endOffset="441"/>
+        <entry
+            name="model"
+            string="attr[colorPrimaryVariant(R)],color[background(U),primary(U),primary_variant(U),on_primary(U),secondary(U),secondary_variant(U),on_secondary(U),surface(D),error(D)],id[nav_host_fragment(U),ivDetailProduct(U),tvDetailName(U),tvDetailDescription(U),recyclerView(U),ivProduct(U),tvProductName(U),tvStoreInfo(U),nav_graph(D),productListFragment(U),action_productListFragment_to_productDetailFragment(R),productDetailFragment(U)],layout[activity_main(U),fragment_product_detail(U),fragment_product_list(U),item_product(U)],navigation[nav_graph(U)],style[Theme_CrashPilot(U),Theme_MaterialComponents_Light_DarkActionBar(R)];16^1a,17^1,18^1,19^2,1a^13^18^15^17,1b^1c^2^3^4^5^6^7^0;;;"/>
+    </map>
+
+</incidents>

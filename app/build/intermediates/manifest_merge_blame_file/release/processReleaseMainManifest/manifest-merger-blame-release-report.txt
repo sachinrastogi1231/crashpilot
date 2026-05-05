@@ -1,0 +1,318 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.gl.hack26.crashpilot"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/harshang.zinzuvadia/AndroidStudioProjects/CrashPilot_Clone/app/src/main/AndroidManifest.xml:4:5-66
+11-->/Users/harshang.zinzuvadia/AndroidStudioProjects/CrashPilot_Clone/app/src/main/AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[com.google.android.gms:play-services-measurement:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e10be4daef66ef7ce75b71f13e91e572/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:24:5-79
+12-->[com.google.android.gms:play-services-measurement:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e10be4daef66ef7ce75b71f13e91e572/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:24:22-76
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->[com.google.android.gms:play-services-measurement:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e10be4daef66ef7ce75b71f13e91e572/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:25:5-68
+13-->[com.google.android.gms:play-services-measurement:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e10be4daef66ef7ce75b71f13e91e572/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:25:22-65
+14    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+14-->[com.google.android.gms:play-services-measurement:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e10be4daef66ef7ce75b71f13e91e572/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:26:5-110
+14-->[com.google.android.gms:play-services-measurement:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e10be4daef66ef7ce75b71f13e91e572/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:26:22-107
+15    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+15-->[com.google.android.gms:play-services-measurement-api:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/2c954ff425c2511eb04ff320200ce93f/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:25:5-79
+15-->[com.google.android.gms:play-services-measurement-api:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/2c954ff425c2511eb04ff320200ce93f/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:25:22-76
+16    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+16-->[com.google.android.gms:play-services-measurement-api:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/2c954ff425c2511eb04ff320200ce93f/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:26:5-88
+16-->[com.google.android.gms:play-services-measurement-api:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/2c954ff425c2511eb04ff320200ce93f/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:26:22-85
+17    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+17-->[com.google.android.gms:play-services-measurement-api:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/2c954ff425c2511eb04ff320200ce93f/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:27:5-82
+17-->[com.google.android.gms:play-services-measurement-api:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/2c954ff425c2511eb04ff320200ce93f/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:27:22-79
+18
+19    <permission
+19-->[androidx.core:core:1.13.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/a4ee89a971f919f833dc5dd41c7a0999/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+20        android:name="com.gl.hack26.crashpilot.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+20-->[androidx.core:core:1.13.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/a4ee89a971f919f833dc5dd41c7a0999/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+21        android:protectionLevel="signature" />
+21-->[androidx.core:core:1.13.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/a4ee89a971f919f833dc5dd41c7a0999/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+22
+23    <uses-permission android:name="com.gl.hack26.crashpilot.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+23-->[androidx.core:core:1.13.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/a4ee89a971f919f833dc5dd41c7a0999/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+23-->[androidx.core:core:1.13.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/a4ee89a971f919f833dc5dd41c7a0999/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+24
+25    <application
+25-->/Users/harshang.zinzuvadia/AndroidStudioProjects/CrashPilot_Clone/app/src/main/AndroidManifest.xml:5:5-18:19
+26        android:allowBackup="true"
+26-->/Users/harshang.zinzuvadia/AndroidStudioProjects/CrashPilot_Clone/app/src/main/AndroidManifest.xml:6:9-35
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.13.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/a4ee89a971f919f833dc5dd41c7a0999/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+28        android:extractNativeLibs="false"
+29        android:label="CrashPilot"
+29-->/Users/harshang.zinzuvadia/AndroidStudioProjects/CrashPilot_Clone/app/src/main/AndroidManifest.xml:7:9-35
+30        android:supportsRtl="true"
+30-->/Users/harshang.zinzuvadia/AndroidStudioProjects/CrashPilot_Clone/app/src/main/AndroidManifest.xml:8:9-35
+31        android:theme="@style/Theme.CrashPilot" >
+31-->/Users/harshang.zinzuvadia/AndroidStudioProjects/CrashPilot_Clone/app/src/main/AndroidManifest.xml:9:9-48
+32        <activity
+32-->/Users/harshang.zinzuvadia/AndroidStudioProjects/CrashPilot_Clone/app/src/main/AndroidManifest.xml:10:9-17:20
+33            android:name="com.gl.hack26.crashpilot.MainActivity"
+33-->/Users/harshang.zinzuvadia/AndroidStudioProjects/CrashPilot_Clone/app/src/main/AndroidManifest.xml:11:13-41
+34            android:exported="true" >
+34-->/Users/harshang.zinzuvadia/AndroidStudioProjects/CrashPilot_Clone/app/src/main/AndroidManifest.xml:12:13-36
+35            <intent-filter>
+35-->/Users/harshang.zinzuvadia/AndroidStudioProjects/CrashPilot_Clone/app/src/main/AndroidManifest.xml:13:13-16:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->/Users/harshang.zinzuvadia/AndroidStudioProjects/CrashPilot_Clone/app/src/main/AndroidManifest.xml:14:17-69
+36-->/Users/harshang.zinzuvadia/AndroidStudioProjects/CrashPilot_Clone/app/src/main/AndroidManifest.xml:14:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->/Users/harshang.zinzuvadia/AndroidStudioProjects/CrashPilot_Clone/app/src/main/AndroidManifest.xml:15:17-77
+38-->/Users/harshang.zinzuvadia/AndroidStudioProjects/CrashPilot_Clone/app/src/main/AndroidManifest.xml:15:27-74
+39            </intent-filter>
+40        </activity>
+41
+42        <receiver
+42-->[com.google.android.gms:play-services-measurement:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e10be4daef66ef7ce75b71f13e91e572/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:29:9-33:20
+43            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+43-->[com.google.android.gms:play-services-measurement:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e10be4daef66ef7ce75b71f13e91e572/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:30:13-85
+44            android:enabled="true"
+44-->[com.google.android.gms:play-services-measurement:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e10be4daef66ef7ce75b71f13e91e572/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:31:13-35
+45            android:exported="false" >
+45-->[com.google.android.gms:play-services-measurement:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e10be4daef66ef7ce75b71f13e91e572/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:32:13-37
+46        </receiver>
+47
+48        <service
+48-->[com.google.android.gms:play-services-measurement:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e10be4daef66ef7ce75b71f13e91e572/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:35:9-38:40
+49            android:name="com.google.android.gms.measurement.AppMeasurementService"
+49-->[com.google.android.gms:play-services-measurement:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e10be4daef66ef7ce75b71f13e91e572/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:36:13-84
+50            android:enabled="true"
+50-->[com.google.android.gms:play-services-measurement:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e10be4daef66ef7ce75b71f13e91e572/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:37:13-35
+51            android:exported="false" />
+51-->[com.google.android.gms:play-services-measurement:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e10be4daef66ef7ce75b71f13e91e572/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:38:13-37
+52        <service
+52-->[com.google.android.gms:play-services-measurement:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e10be4daef66ef7ce75b71f13e91e572/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:39:9-43:72
+53            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+53-->[com.google.android.gms:play-services-measurement:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e10be4daef66ef7ce75b71f13e91e572/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:40:13-87
+54            android:enabled="true"
+54-->[com.google.android.gms:play-services-measurement:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e10be4daef66ef7ce75b71f13e91e572/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:41:13-35
+55            android:exported="false"
+55-->[com.google.android.gms:play-services-measurement:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e10be4daef66ef7ce75b71f13e91e572/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:42:13-37
+56            android:permission="android.permission.BIND_JOB_SERVICE" />
+56-->[com.google.android.gms:play-services-measurement:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e10be4daef66ef7ce75b71f13e91e572/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:43:13-69
+57
+58        <property
+58-->[com.google.android.gms:play-services-measurement-api:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/2c954ff425c2511eb04ff320200ce93f/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:30:9-32:61
+59            android:name="android.adservices.AD_SERVICES_CONFIG"
+59-->[com.google.android.gms:play-services-measurement-api:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/2c954ff425c2511eb04ff320200ce93f/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:31:13-65
+60            android:resource="@xml/ga_ad_services_config" />
+60-->[com.google.android.gms:play-services-measurement-api:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/2c954ff425c2511eb04ff320200ce93f/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:32:13-58
+61
+62        <service
+62-->[com.google.android.gms:play-services-measurement-api:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/2c954ff425c2511eb04ff320200ce93f/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:34:9-40:19
+63            android:name="com.google.firebase.components.ComponentDiscoveryService"
+63-->[com.google.android.gms:play-services-measurement-api:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/2c954ff425c2511eb04ff320200ce93f/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:35:13-84
+64            android:directBootAware="true"
+64-->[com.google.firebase:firebase-common:21.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/3ee55b0b89e3ff6298a106175b6a5175/transformed/firebase-common-21.0.0/AndroidManifest.xml:32:13-43
+65            android:exported="false" >
+65-->[com.google.android.gms:play-services-measurement-api:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/2c954ff425c2511eb04ff320200ce93f/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:36:13-37
+66            <meta-data
+66-->[com.google.android.gms:play-services-measurement-api:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/2c954ff425c2511eb04ff320200ce93f/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:37:13-39:85
+67                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+67-->[com.google.android.gms:play-services-measurement-api:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/2c954ff425c2511eb04ff320200ce93f/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:38:17-139
+68                android:value="com.google.firebase.components.ComponentRegistrar" />
+68-->[com.google.android.gms:play-services-measurement-api:22.0.2] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/2c954ff425c2511eb04ff320200ce93f/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:39:17-82
+69            <meta-data
+69-->[com.google.firebase:firebase-crashlytics:19.0.3] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/49753b6ce216a00cdd717f08debb6ecd/transformed/firebase-crashlytics-19.0.3/AndroidManifest.xml:15:13-17:85
+70                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
+70-->[com.google.firebase:firebase-crashlytics:19.0.3] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/49753b6ce216a00cdd717f08debb6ecd/transformed/firebase-crashlytics-19.0.3/AndroidManifest.xml:16:17-126
+71                android:value="com.google.firebase.components.ComponentRegistrar" />
+71-->[com.google.firebase:firebase-crashlytics:19.0.3] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/49753b6ce216a00cdd717f08debb6ecd/transformed/firebase-crashlytics-19.0.3/AndroidManifest.xml:17:17-82
+72            <meta-data
+72-->[com.google.firebase:firebase-crashlytics:19.0.3] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/49753b6ce216a00cdd717f08debb6ecd/transformed/firebase-crashlytics-19.0.3/AndroidManifest.xml:18:13-20:85
+73                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+73-->[com.google.firebase:firebase-crashlytics:19.0.3] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/49753b6ce216a00cdd717f08debb6ecd/transformed/firebase-crashlytics-19.0.3/AndroidManifest.xml:19:17-115
+74                android:value="com.google.firebase.components.ComponentRegistrar" />
+74-->[com.google.firebase:firebase-crashlytics:19.0.3] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/49753b6ce216a00cdd717f08debb6ecd/transformed/firebase-crashlytics-19.0.3/AndroidManifest.xml:20:17-82
+75            <meta-data
+75-->[com.google.firebase:firebase-sessions:2.0.3] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e70418b9d653695563241ac5640bae9c/transformed/firebase-sessions-2.0.3/AndroidManifest.xml:29:13-31:85
+76                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+76-->[com.google.firebase:firebase-sessions:2.0.3] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e70418b9d653695563241ac5640bae9c/transformed/firebase-sessions-2.0.3/AndroidManifest.xml:30:17-117
+77                android:value="com.google.firebase.components.ComponentRegistrar" />
+77-->[com.google.firebase:firebase-sessions:2.0.3] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e70418b9d653695563241ac5640bae9c/transformed/firebase-sessions-2.0.3/AndroidManifest.xml:31:17-82
+78            <meta-data
+78-->[com.google.firebase:firebase-installations:18.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/d3a64c8bd0073c032f76f8cf5bec471d/transformed/firebase-installations-18.0.0/AndroidManifest.xml:15:13-17:85
+79                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+79-->[com.google.firebase:firebase-installations:18.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/d3a64c8bd0073c032f76f8cf5bec471d/transformed/firebase-installations-18.0.0/AndroidManifest.xml:16:17-130
+80                android:value="com.google.firebase.components.ComponentRegistrar" />
+80-->[com.google.firebase:firebase-installations:18.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/d3a64c8bd0073c032f76f8cf5bec471d/transformed/firebase-installations-18.0.0/AndroidManifest.xml:17:17-82
+81            <meta-data
+81-->[com.google.firebase:firebase-installations:18.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/d3a64c8bd0073c032f76f8cf5bec471d/transformed/firebase-installations-18.0.0/AndroidManifest.xml:18:13-20:85
+82                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+82-->[com.google.firebase:firebase-installations:18.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/d3a64c8bd0073c032f76f8cf5bec471d/transformed/firebase-installations-18.0.0/AndroidManifest.xml:19:17-127
+83                android:value="com.google.firebase.components.ComponentRegistrar" />
+83-->[com.google.firebase:firebase-installations:18.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/d3a64c8bd0073c032f76f8cf5bec471d/transformed/firebase-installations-18.0.0/AndroidManifest.xml:20:17-82
+84            <meta-data
+84-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/81feb02f1b214a7198a5edd4a28a6167/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
+85                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+85-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/81feb02f1b214a7198a5edd4a28a6167/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+86                android:value="com.google.firebase.components.ComponentRegistrar" />
+86-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/81feb02f1b214a7198a5edd4a28a6167/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
+87            <meta-data
+87-->[com.google.firebase:firebase-common:21.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/3ee55b0b89e3ff6298a106175b6a5175/transformed/firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
+88                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+88-->[com.google.firebase:firebase-common:21.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/3ee55b0b89e3ff6298a106175b6a5175/transformed/firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+89                android:value="com.google.firebase.components.ComponentRegistrar" />
+89-->[com.google.firebase:firebase-common:21.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/3ee55b0b89e3ff6298a106175b6a5175/transformed/firebase-common-21.0.0/AndroidManifest.xml:37:17-82
+90            <meta-data
+90-->[com.google.firebase:firebase-datatransport:19.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/a76dcc06b333f81f7c3423f607925d03/transformed/firebase-datatransport-19.0.0/AndroidManifest.xml:25:13-27:85
+91                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+91-->[com.google.firebase:firebase-datatransport:19.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/a76dcc06b333f81f7c3423f607925d03/transformed/firebase-datatransport-19.0.0/AndroidManifest.xml:26:17-115
+92                android:value="com.google.firebase.components.ComponentRegistrar" />
+92-->[com.google.firebase:firebase-datatransport:19.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/a76dcc06b333f81f7c3423f607925d03/transformed/firebase-datatransport-19.0.0/AndroidManifest.xml:27:17-82
+93        </service>
+94        <service
+94-->[com.google.firebase:firebase-sessions:2.0.3] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e70418b9d653695563241ac5640bae9c/transformed/firebase-sessions-2.0.3/AndroidManifest.xml:22:9-25:40
+95            android:name="com.google.firebase.sessions.SessionLifecycleService"
+95-->[com.google.firebase:firebase-sessions:2.0.3] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e70418b9d653695563241ac5640bae9c/transformed/firebase-sessions-2.0.3/AndroidManifest.xml:23:13-80
+96            android:enabled="true"
+96-->[com.google.firebase:firebase-sessions:2.0.3] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e70418b9d653695563241ac5640bae9c/transformed/firebase-sessions-2.0.3/AndroidManifest.xml:24:13-35
+97            android:exported="false" />
+97-->[com.google.firebase:firebase-sessions:2.0.3] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/e70418b9d653695563241ac5640bae9c/transformed/firebase-sessions-2.0.3/AndroidManifest.xml:25:13-37
+98
+99        <provider
+99-->[com.google.firebase:firebase-common:21.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/3ee55b0b89e3ff6298a106175b6a5175/transformed/firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
+100            android:name="com.google.firebase.provider.FirebaseInitProvider"
+100-->[com.google.firebase:firebase-common:21.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/3ee55b0b89e3ff6298a106175b6a5175/transformed/firebase-common-21.0.0/AndroidManifest.xml:24:13-77
+101            android:authorities="com.gl.hack26.crashpilot.firebaseinitprovider"
+101-->[com.google.firebase:firebase-common:21.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/3ee55b0b89e3ff6298a106175b6a5175/transformed/firebase-common-21.0.0/AndroidManifest.xml:25:13-72
+102            android:directBootAware="true"
+102-->[com.google.firebase:firebase-common:21.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/3ee55b0b89e3ff6298a106175b6a5175/transformed/firebase-common-21.0.0/AndroidManifest.xml:26:13-43
+103            android:exported="false"
+103-->[com.google.firebase:firebase-common:21.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/3ee55b0b89e3ff6298a106175b6a5175/transformed/firebase-common-21.0.0/AndroidManifest.xml:27:13-37
+104            android:initOrder="100" />
+104-->[com.google.firebase:firebase-common:21.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/3ee55b0b89e3ff6298a106175b6a5175/transformed/firebase-common-21.0.0/AndroidManifest.xml:28:13-36
+105        <provider
+105-->[androidx.emoji2:emoji2:1.2.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/6dbd0ea152f33fc3fd62d25b03f6be52/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+106            android:name="androidx.startup.InitializationProvider"
+106-->[androidx.emoji2:emoji2:1.2.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/6dbd0ea152f33fc3fd62d25b03f6be52/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+107            android:authorities="com.gl.hack26.crashpilot.androidx-startup"
+107-->[androidx.emoji2:emoji2:1.2.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/6dbd0ea152f33fc3fd62d25b03f6be52/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+108            android:exported="false" >
+108-->[androidx.emoji2:emoji2:1.2.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/6dbd0ea152f33fc3fd62d25b03f6be52/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+109            <meta-data
+109-->[androidx.emoji2:emoji2:1.2.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/6dbd0ea152f33fc3fd62d25b03f6be52/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+110                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+110-->[androidx.emoji2:emoji2:1.2.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/6dbd0ea152f33fc3fd62d25b03f6be52/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+111                android:value="androidx.startup" />
+111-->[androidx.emoji2:emoji2:1.2.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/6dbd0ea152f33fc3fd62d25b03f6be52/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+112            <meta-data
+112-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/5e446108c92080cefd67e23ff1398dab/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+113                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+113-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/5e446108c92080cefd67e23ff1398dab/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+114                android:value="androidx.startup" />
+114-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/5e446108c92080cefd67e23ff1398dab/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+115            <meta-data
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fafc85d0da1d2a7104a35462e2e6d822/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+116                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fafc85d0da1d2a7104a35462e2e6d822/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+117                android:value="androidx.startup" />
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fafc85d0da1d2a7104a35462e2e6d822/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+118        </provider>
+119
+120        <uses-library
+120-->[androidx.window:window:1.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/00adf2d8b3c7bf4f18a32b338171d72e/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+121            android:name="androidx.window.extensions"
+121-->[androidx.window:window:1.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/00adf2d8b3c7bf4f18a32b338171d72e/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+122            android:required="false" />
+122-->[androidx.window:window:1.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/00adf2d8b3c7bf4f18a32b338171d72e/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+123        <uses-library
+123-->[androidx.window:window:1.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/00adf2d8b3c7bf4f18a32b338171d72e/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+124            android:name="androidx.window.sidecar"
+124-->[androidx.window:window:1.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/00adf2d8b3c7bf4f18a32b338171d72e/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+125            android:required="false" />
+125-->[androidx.window:window:1.0.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/00adf2d8b3c7bf4f18a32b338171d72e/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+126        <uses-library
+126-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/eee9969804720845dd5a3115f056cdc7/transformed/ads-adservices-1.0.0-beta05/AndroidManifest.xml:23:9-25:40
+127            android:name="android.ext.adservices"
+127-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/eee9969804720845dd5a3115f056cdc7/transformed/ads-adservices-1.0.0-beta05/AndroidManifest.xml:24:13-50
+128            android:required="false" />
+128-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/eee9969804720845dd5a3115f056cdc7/transformed/ads-adservices-1.0.0-beta05/AndroidManifest.xml:25:13-37
+129
+130        <meta-data
+130-->[com.google.android.gms:play-services-basement:18.4.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fe9361c761fc2cdc9c6f458d26eafe84/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+131            android:name="com.google.android.gms.version"
+131-->[com.google.android.gms:play-services-basement:18.4.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fe9361c761fc2cdc9c6f458d26eafe84/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+132            android:value="@integer/google_play_services_version" />
+132-->[com.google.android.gms:play-services-basement:18.4.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fe9361c761fc2cdc9c6f458d26eafe84/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+133
+134        <receiver
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fafc85d0da1d2a7104a35462e2e6d822/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+135            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+135-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fafc85d0da1d2a7104a35462e2e6d822/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+136            android:directBootAware="false"
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fafc85d0da1d2a7104a35462e2e6d822/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+137            android:enabled="true"
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fafc85d0da1d2a7104a35462e2e6d822/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+138            android:exported="true"
+138-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fafc85d0da1d2a7104a35462e2e6d822/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+139            android:permission="android.permission.DUMP" >
+139-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fafc85d0da1d2a7104a35462e2e6d822/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+140            <intent-filter>
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fafc85d0da1d2a7104a35462e2e6d822/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+141                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fafc85d0da1d2a7104a35462e2e6d822/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fafc85d0da1d2a7104a35462e2e6d822/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+142            </intent-filter>
+143            <intent-filter>
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fafc85d0da1d2a7104a35462e2e6d822/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+144                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fafc85d0da1d2a7104a35462e2e6d822/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fafc85d0da1d2a7104a35462e2e6d822/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+145            </intent-filter>
+146            <intent-filter>
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fafc85d0da1d2a7104a35462e2e6d822/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+147                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fafc85d0da1d2a7104a35462e2e6d822/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fafc85d0da1d2a7104a35462e2e6d822/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+148            </intent-filter>
+149            <intent-filter>
+149-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fafc85d0da1d2a7104a35462e2e6d822/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+150                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+150-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fafc85d0da1d2a7104a35462e2e6d822/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+150-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/fafc85d0da1d2a7104a35462e2e6d822/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+151            </intent-filter>
+152        </receiver>
+153
+154        <service
+154-->[com.google.android.datatransport:transport-backend-cct:3.3.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/2c56f91e98a4843ff09e9c8b493c0cfd/transformed/transport-backend-cct-3.3.0/AndroidManifest.xml:26:9-32:19
+155            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+155-->[com.google.android.datatransport:transport-backend-cct:3.3.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/2c56f91e98a4843ff09e9c8b493c0cfd/transformed/transport-backend-cct-3.3.0/AndroidManifest.xml:27:13-103
+156            android:exported="false" >
+156-->[com.google.android.datatransport:transport-backend-cct:3.3.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/2c56f91e98a4843ff09e9c8b493c0cfd/transformed/transport-backend-cct-3.3.0/AndroidManifest.xml:28:13-37
+157            <meta-data
+157-->[com.google.android.datatransport:transport-backend-cct:3.3.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/2c56f91e98a4843ff09e9c8b493c0cfd/transformed/transport-backend-cct-3.3.0/AndroidManifest.xml:29:13-31:39
+158                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+158-->[com.google.android.datatransport:transport-backend-cct:3.3.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/2c56f91e98a4843ff09e9c8b493c0cfd/transformed/transport-backend-cct-3.3.0/AndroidManifest.xml:30:17-94
+159                android:value="cct" />
+159-->[com.google.android.datatransport:transport-backend-cct:3.3.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/2c56f91e98a4843ff09e9c8b493c0cfd/transformed/transport-backend-cct-3.3.0/AndroidManifest.xml:31:17-36
+160        </service>
+161        <service
+161-->[com.google.android.datatransport:transport-runtime:3.3.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/7c701ab53b4d8ef6313d96edeb0bad28/transformed/transport-runtime-3.3.0/AndroidManifest.xml:24:9-28:19
+162            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+162-->[com.google.android.datatransport:transport-runtime:3.3.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/7c701ab53b4d8ef6313d96edeb0bad28/transformed/transport-runtime-3.3.0/AndroidManifest.xml:25:13-117
+163            android:exported="false"
+163-->[com.google.android.datatransport:transport-runtime:3.3.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/7c701ab53b4d8ef6313d96edeb0bad28/transformed/transport-runtime-3.3.0/AndroidManifest.xml:26:13-37
+164            android:permission="android.permission.BIND_JOB_SERVICE" >
+164-->[com.google.android.datatransport:transport-runtime:3.3.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/7c701ab53b4d8ef6313d96edeb0bad28/transformed/transport-runtime-3.3.0/AndroidManifest.xml:27:13-69
+165        </service>
+166
+167        <receiver
+167-->[com.google.android.datatransport:transport-runtime:3.3.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/7c701ab53b4d8ef6313d96edeb0bad28/transformed/transport-runtime-3.3.0/AndroidManifest.xml:30:9-32:40
+168            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+168-->[com.google.android.datatransport:transport-runtime:3.3.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/7c701ab53b4d8ef6313d96edeb0bad28/transformed/transport-runtime-3.3.0/AndroidManifest.xml:31:13-132
+169            android:exported="false" />
+169-->[com.google.android.datatransport:transport-runtime:3.3.0] /Users/harshang.zinzuvadia/.gradle/caches/transforms-4/7c701ab53b4d8ef6313d96edeb0bad28/transformed/transport-runtime-3.3.0/AndroidManifest.xml:32:13-37
+170    </application>
+171
+172</manifest>

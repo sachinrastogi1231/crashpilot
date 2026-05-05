@@ -26,8 +26,8 @@ class ProductViewModel : ViewModel() {
     fun triggerRandomCrash(productId: Int, isDetailView: Boolean = false) {
         val randomValue = (0..100).random()
         
-        // 20% chance to crash if in detail view, or 5% chance during list binding
-        val crashThreshold = if (isDetailView) 20 else 5
+        // Lower probabilities to ensure app is usable: 10% for detail view, 1% for list binding
+        val crashThreshold = if (isDetailView) 10 else 1
         
         if (randomValue < crashThreshold) {
             when (productId % 24) {
@@ -76,8 +76,13 @@ class ProductViewModel : ViewModel() {
                 7 -> {
                     // Realistic ClassCastException: Unsafe type casting
                     val anyValue: Any = "String Value"
-                    val intValue = anyValue as Int // Direct cast without type check
-                    val result = intValue * 2
+                    if (productId % 2 == 0) {
+                        val intValue = anyValue as Int // Direct cast without type check
+                    } else {
+                        // Another type of crash to avoid immediate launch crash if possible
+                        val list = listOf("A")
+                        val item = list[5]
+                    }
                 }
                 8 -> {
                     // Realistic IllegalStateException: Invalid operation in wrong state
