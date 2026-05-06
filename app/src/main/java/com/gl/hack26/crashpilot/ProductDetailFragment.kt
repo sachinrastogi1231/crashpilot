@@ -48,8 +48,12 @@ class ProductDetailFragment : Fragment() {
             transformations(CircleCropTransformation())
         }
 
-        btnCrash.setOnClickListener {
-            viewModel.triggerCrash(productId, productName)
+        if (com.gl.hack26.crashpilot.BuildConfig.DEBUG) {
+            btnCrash.setOnClickListener {
+                viewModel.triggerCrash(productId, productName)
+            }
+        } else {
+            btnCrash.visibility = View.GONE
         }
     }
 }
