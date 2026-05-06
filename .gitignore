@@ -13,3 +13,72 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Android build artifacts
+app/build/
+**/build/
+
+# Intermediate build files
+*.apk
+*.aar
+*.ap_
+*.dex
+
+# Debug files
+*.log
+*.tmp
+
+# Local configuration files
+local.properties
+
+# IDE files
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Crashlytics
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+
+# Firebase
+google-services.json
+app/google-services.json
+
+# Keystore files
+*.jks
+*.keystore
+
+# ProGuard
+proguard/
+*.pro
+
+# Test results
+test-results/
