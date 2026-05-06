@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.gl.hack26.crashpilot.app-mergeDebugResources-57:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/Users/harshang.zinzuvadia/.gradle/caches/transforms-4/bc791d80b2ee171b1f918ef88232519c/transformed/appcompat-1.6.1/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    }
+                }
+            ]
+        }
+    ]
+}

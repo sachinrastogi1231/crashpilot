@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="background">#F5F5F5</color>
+    <color name="error">#B00020</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#000000</color>
+    <color name="primary">#6200EE</color>
+    <color name="primary_variant">#3700B3</color>
+    <color name="secondary">#03DAC6</color>
+    <color name="secondary_variant">#018786</color>
+    <color name="surface">#FFFFFF</color>
+    <string name="com.google.firebase.crashlytics.mapping_file_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">00000000000000000000000000000000</string>
+    <string name="gcm_defaultSenderId" translatable="false">553260485841</string>
+    <string name="google_api_key" translatable="false">AIzaSyCUAYkHo2JFBjaIfSy_FWmEhzhsd4gBZB4</string>
+    <string name="google_app_id" translatable="false">1:553260485841:android:d77b13fb970e9202c409f0</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCUAYkHo2JFBjaIfSy_FWmEhzhsd4gBZB4</string>
+    <string name="google_storage_bucket" translatable="false">crashpilot-4d447.firebasestorage.app</string>
+    <string name="project_id" translatable="false">crashpilot-4d447</string>
+    <style name="Theme.CrashPilot" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+</resources>

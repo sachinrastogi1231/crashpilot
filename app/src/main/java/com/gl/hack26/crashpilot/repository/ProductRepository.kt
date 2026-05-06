@@ -13,4 +13,8 @@ class ProductRepository {
             Product(5, "Crashy Item 5", "Alpha Store", android.R.drawable.ic_menu_report_image)
         )
     }
+
+    fun getProductById(id: Int): Product? {
+        return getProducts().find { it.id == id }
+    }
 }
