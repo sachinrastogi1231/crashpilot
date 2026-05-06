@@ -45,8 +45,8 @@ class ProductListFragment : Fragment() {
             recyclerView.adapter = adapter
         }
 
-        view.findViewById<View>(R.id.btnListCrash).setOnClickListener {
-            viewModel.triggerListCrash()
+        view.findViewById<View>(R.id.btnRefreshProducts).setOnClickListener {
+            viewModel.refreshProducts()
         }
     }
 }
