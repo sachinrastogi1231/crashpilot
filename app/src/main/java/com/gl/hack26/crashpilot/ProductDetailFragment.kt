@@ -38,7 +38,9 @@ class ProductDetailFragment : Fragment() {
         val imageResId = arguments?.getInt("IMAGE_RES", android.R.drawable.ic_menu_report_image) ?: android.R.drawable.ic_menu_report_image
 
         tvName.text = productName
-        tvDescription.text = "This $productName is from $storeInfo. It is highly experimental and might cause your system to crash!"
+        tvDescription.text = "This $productName is from $storeInfo."
+        btnCrash.text = "Crash reporting disabled"
+        btnCrash.isEnabled = false
         
         // Use Coil for random image
         ivProduct.load("https://picsum.photos/seed/${productId}/400/400") {
@@ -46,14 +48,6 @@ class ProductDetailFragment : Fragment() {
             placeholder(imageResId)
             error(imageResId)
             transformations(CircleCropTransformation())
-        }
-
-        if (BuildConfig.DEBUG) {
-            btnCrash.setOnClickListener {
-                viewModel.triggerCrash(productId, productName)
-            }
-        } else {
-            btnCrash.visibility = View.GONE
         }
     }
 }

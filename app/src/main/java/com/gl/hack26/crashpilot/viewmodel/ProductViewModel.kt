@@ -3,7 +3,6 @@ package com.gl.hack26.crashpilot.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.gl.hack26.crashpilot.BuildConfig
 import com.gl.hack26.crashpilot.Product
 import com.gl.hack26.crashpilot.repository.ProductRepository
 
@@ -22,25 +21,7 @@ class ProductViewModel : ViewModel() {
     }
 
     fun triggerCrash(productId: Int, productName: String?) {
-        if (!BuildConfig.DEBUG) {
-            return
-        }
-
-        when (productId % 3) {
-            0 -> {
-                // ArithmeticException
-                val x = 10 / 0
-            }
-            1 -> {
-                // IndexOutOfBoundsException
-                val list = listOf(1)
-                val y = list[10]
-            }
-            else -> {
-                // Custom RuntimeException
-                throw RuntimeException("Intentional Crash in CrashPilot App: $productName triggered it!")
-            }
-        }
+        // Crash demo actions must not terminate the app from user-facing product UI.
     }
 
     fun triggerListCrash() {

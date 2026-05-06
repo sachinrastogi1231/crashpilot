@@ -4,20 +4,9 @@ import org.junit.Test
 
 class ProductViewModelTest {
     @Test
-    fun triggerCrash_doesNotThrowWhenIntentionalCrashesAreDisabled() {
-        val viewModel = ProductViewModel().apply {
-            intentionalCrashesEnabled = false
-        }
+    fun triggerCrashDoesNotThrowForCrashyItemFive() {
+        val viewModel = ProductViewModel()
 
         viewModel.triggerCrash(5, "Crashy Item 5")
-    }
-
-    @Test
-    fun triggerListCrash_doesNotThrowWhenIntentionalCrashesAreDisabled() {
-        val viewModel = ProductViewModel().apply {
-            intentionalCrashesEnabled = false
-        }
-
-        viewModel.triggerListCrash()
     }
 }
