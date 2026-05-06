@@ -23,9 +23,9 @@ class ProductViewModel : ViewModel() {
 
     fun triggerCrash(productId: Int, productName: String?) {
         if (!BuildConfig.DEBUG) {
-            // Crash triggers are only enabled in debug builds
             return
         }
+
         when (productId % 3) {
             0 -> {
                 // ArithmeticException
@@ -44,10 +44,6 @@ class ProductViewModel : ViewModel() {
     }
 
     fun triggerListCrash() {
-        if (!BuildConfig.DEBUG) {
-            // Crash triggers are only enabled in debug builds
-            return
-        }
         val nullString: String? = null
         nullString!!.length // Trigger NPE
     }
