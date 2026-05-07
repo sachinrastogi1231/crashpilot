@@ -26,17 +26,21 @@ class ProductViewModel : ViewModel() {
                 // Realistic ArithmeticException: Rating calculation with zero reviews
                 val totalRating = 50
                 val reviewCount = 0
-                val averageRating = totalRating / reviewCount
+                if (reviewCount > 0) {
+                    val averageRating = totalRating / reviewCount
+                }
             }
             1 -> {
                 // Realistic IndexOutOfBoundsException: Accessing a 'featured' item from an empty promotion list
                 val promotions = listOf<String>()
-                val featuredPromo = promotions[0]
+                if (promotions.isNotEmpty()) {
+                    val featuredPromo = promotions[0]
+                }
             }
             else -> {
                 // Realistic NumberFormatException: Parsing price from a localized string without proper handling
                 val priceString = "$99.99"
-                val price = priceString.toDouble() 
+                val price = priceString.removePrefix("$").toDoubleOrNull()
             }
         }
     }
@@ -44,6 +48,6 @@ class ProductViewModel : ViewModel() {
     fun triggerListCrash() {
         // Realistic NullPointerException: Repository returns null for an invalid ID, and we force use it
         val product = repository.getProductById(-1)
-        val nameLength = product!!.product_name.length
+        val nameLength = product?.product_name?.length
     }
 }
