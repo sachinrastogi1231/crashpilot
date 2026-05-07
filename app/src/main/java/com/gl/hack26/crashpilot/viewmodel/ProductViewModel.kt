@@ -3,6 +3,7 @@ package com.gl.hack26.crashpilot.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.gl.hack26.crashpilot.BuildConfig
 import com.gl.hack26.crashpilot.Product
 import com.gl.hack26.crashpilot.repository.ProductRepository
 
@@ -21,28 +22,31 @@ class ProductViewModel : ViewModel() {
     }
 
     fun triggerCrash(productId: Int, productName: String?) {
+        if (!BuildConfig.DEBUG) return
+
         when (productId % 3) {
             0 -> {
-                // Realistic ArithmeticException: Rating calculation with zero reviews
+                // Demo: ArithmeticException guarded against zero divisor
                 val totalRating = 50
                 val reviewCount = 0
-                val averageRating = totalRating / reviewCount
+                val averageRating = if (reviewCount != 0) totalRating / reviewCount else 0
             }
             1 -> {
-                // Realistic IndexOutOfBoundsException: Accessing a 'featured' item from an empty promotion list
+                // Demo: IndexOutOfBoundsException from empty promotions list
                 val promotions = listOf<String>()
                 val featuredPromo = promotions[0]
             }
             else -> {
-                // Realistic NumberFormatException: Parsing price from a localized string without proper handling
+                // Demo: NumberFormatException from localized price string
                 val priceString = "$99.99"
-                val price = priceString.toDouble() 
+                val price = priceString.toDouble()
             }
         }
     }
 
     fun triggerListCrash() {
-        // Realistic NullPointerException: Repository returns null for an invalid ID, and we force use it
+        if (!BuildConfig.DEBUG) return
+        // Demo: NullPointerException from invalid product ID
         val product = repository.getProductById(-1)
         val nameLength = product!!.product_name.length
     }
