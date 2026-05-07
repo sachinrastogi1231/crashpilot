@@ -34,9 +34,9 @@ class ProductViewModel : ViewModel() {
                 val featuredPromo = promotions[0]
             }
             else -> {
-                // Realistic NumberFormatException: Parsing price from a localized string without proper handling
+                // Realistic NumberFormatException: Parsing price from a localized string with proper handling
                 val priceString = "$99.99"
-                val price = priceString.toDouble() 
+                val price = priceString.replace(Regex("[^\\d.]"), "").toDoubleOrNull() ?: 0.0
             }
         }
     }
