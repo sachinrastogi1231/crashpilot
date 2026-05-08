@@ -25,8 +25,6 @@ class ProductAdapter(
 
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
         val product = productList[position]
-        // Trigger a low-probability crash during binding (scrolling)
-        viewModel.triggerRandomCrash(product.id, isDetailView = false)
         holder.bind(product)
     }
 
@@ -49,7 +47,11 @@ class ProductAdapter(
                 transformations(CircleCropTransformation())
             }
 
-            itemView.setOnClickListener { onItemClick(product) }
+            itemView.setOnClickListener {
+                // Trigger crash-demo on user interaction, not during layout
+                viewModel.triggerRandomCrash(product.id, isDetailView = false)
+                onItemClick(product)
+            }
         }
     }
 }
