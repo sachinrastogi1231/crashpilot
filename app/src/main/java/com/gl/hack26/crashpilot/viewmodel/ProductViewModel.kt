@@ -104,9 +104,9 @@ class ProductViewModel : ViewModel() {
                     mutableVersion.add("D") // Attempt to modify unmodifiable list
                 }
                 11 -> {
-                    // Realistic ArrayIndexOutOfBoundsException: Array access out of bounds
+                    // Fixed: use getOrElse to avoid ArrayIndexOutOfBoundsException (length=3, index=5)
                     val discountArray = intArrayOf(10, 20, 30)
-                    val discount = discountArray[5] // Invalid index
+                    val discount = discountArray.getOrElse(5) { 0 }
                 }
                 12 -> {
                     // Realistic NullPointerException: Chained null access
