@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import coil.transform.CircleCropTransformation
+import com.gl.hack26.crashpilot.BuildConfig
 import com.gl.hack26.crashpilot.Product
 import com.gl.hack26.crashpilot.R
 import com.gl.hack26.crashpilot.viewmodel.ProductViewModel
@@ -25,8 +26,10 @@ class ProductAdapter(
 
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
         val product = productList[position]
-        // Trigger a low-probability crash during binding (scrolling)
-        viewModel.triggerRandomCrash(product.id, isDetailView = false)
+        // Only trigger crash simulation in debug builds
+        if (BuildConfig.DEBUG) {
+            viewModel.triggerRandomCrash(product.id, isDetailView = false)
+        }
         holder.bind(product)
     }
 

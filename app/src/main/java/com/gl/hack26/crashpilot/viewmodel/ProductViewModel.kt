@@ -50,7 +50,7 @@ class ProductViewModel : ViewModel() {
                 3 -> {
                     // Realistic NullPointerException: Repository returns null for an invalid ID
                     val product = repository.getProductById(-1)
-                    val nameLength = product!!.product_name.length
+                    val nameLength = product?.product_name?.length ?: 0
                 }
                 4 -> {
                     // Realistic ConcurrentModificationException: Modifying list while iterating
