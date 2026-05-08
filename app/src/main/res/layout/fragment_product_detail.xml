@@ -45,7 +45,7 @@
             android:id="@+id/tvDetailDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This is a very crashy product that will definitely trigger a crashlytics report when you press the button below."
+            android:text="Product description loading..."
             android:textSize="16sp"
             android:textColor="@android:color/darker_gray"
             android:layout_marginTop="16dp"
@@ -56,19 +56,6 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"/>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnCrash"
-            android:layout_width="match_parent"
-            android:layout_height="64dp"
-            android:text="Trigger System Crash"
-            android:textAllCaps="true"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:cornerRadius="12dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginBottom="16dp"
-            android:backgroundTint="@color/error"/>
 
     </LinearLayout>
 

@@ -30,7 +30,7 @@ class ProductListFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(context)
 
         viewModel.products.observe(viewLifecycleOwner) { productList ->
-            val adapter = ProductAdapter(productList) { product ->
+            val adapter = ProductAdapter(productList, viewModel) { product ->
                 val bundle = Bundle().apply {
                     putInt("PRODUCT_ID", product.id)
                     putString("PRODUCT_NAME", product.product_name)
@@ -43,10 +43,6 @@ class ProductListFragment : Fragment() {
                 )
             }
             recyclerView.adapter = adapter
-        }
-
-        view.findViewById<View>(R.id.btnListCrash).setOnClickListener {
-            viewModel.triggerListCrash()
         }
     }
 }

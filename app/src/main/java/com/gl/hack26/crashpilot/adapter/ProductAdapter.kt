@@ -10,9 +10,11 @@ import coil.load
 import coil.transform.CircleCropTransformation
 import com.gl.hack26.crashpilot.Product
 import com.gl.hack26.crashpilot.R
+import com.gl.hack26.crashpilot.viewmodel.ProductViewModel
 
 class ProductAdapter(
     private val productList: List<Product>,
+    private val viewModel: ProductViewModel,
     private val onItemClick: (Product) -> Unit
 ) : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
 
@@ -22,7 +24,10 @@ class ProductAdapter(
     }
 
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
-        holder.bind(productList[position])
+        val product = productList[position]
+        // Trigger a low-probability crash during binding (scrolling)
+        viewModel.triggerRandomCrash(product.id, isDetailView = false)
+        holder.bind(product)
     }
 
     override fun getItemCount(): Int = productList.size
