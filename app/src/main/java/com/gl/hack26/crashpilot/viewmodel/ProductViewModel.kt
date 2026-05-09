@@ -77,7 +77,8 @@ class ProductViewModel : ViewModel() {
                     // Realistic ClassCastException: Unsafe type casting
                     val anyValue: Any = "String Value"
                     if (productId % 2 == 0) {
-                        val intValue = anyValue as Int // Direct cast without type check
+                        // Safe cast avoids ClassCastException when anyValue is not an Int
+                        val intValue = anyValue as? Int
                     } else {
                         // Another type of crash to avoid immediate launch crash if possible
                         val list = listOf("A")
