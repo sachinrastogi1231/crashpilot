@@ -29,7 +29,7 @@ class ProductViewModel : ViewModel() {
         // Lower probabilities to ensure app is usable: 10% for detail view, 1% for list binding
         val crashThreshold = if (isDetailView) 10 else 1
         
-        if (randomValue < crashThreshold) {
+        if (com.gl.hack26.crashpilot.BuildConfig.DEBUG && randomValue < crashThreshold) {
             when (productId % 24) {
                 0 -> {
                     // Realistic ArithmeticException: Rating calculation with zero reviews
