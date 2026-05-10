@@ -3,6 +3,7 @@ package com.gl.hack26.crashpilot.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.gl.hack26.crashpilot.BuildConfig
 import com.gl.hack26.crashpilot.Product
 import com.gl.hack26.crashpilot.repository.ProductRepository
 import java.text.SimpleDateFormat
@@ -24,6 +25,10 @@ class ProductViewModel : ViewModel() {
 
     @Suppress("UNUSED_VARIABLE", "DIVISION_BY_ZERO", "PLATFORM_CLASS_MAPPED_TO_KOTLIN", "UNCHECKED_CAST")
     fun triggerRandomCrash(productId: Int, isDetailView: Boolean = false) {
+        if (!BuildConfig.DEBUG) {
+            return
+        }
+
         val randomValue = (0..100).random()
         
         // Lower probabilities to ensure app is usable: 10% for detail view, 1% for list binding
