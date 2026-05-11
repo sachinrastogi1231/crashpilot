@@ -24,6 +24,9 @@ class ProductViewModel : ViewModel() {
 
     @Suppress("UNUSED_VARIABLE", "DIVISION_BY_ZERO", "PLATFORM_CLASS_MAPPED_TO_KOTLIN", "UNCHECKED_CAST")
     fun triggerRandomCrash(productId: Int, isDetailView: Boolean = false) {
+        // Crash simulations are only enabled in debug builds to prevent production crashes
+        if (!com.gl.hack26.crashpilot.BuildConfig.DEBUG) return
+
         val randomValue = (0..100).random()
         
         // Lower probabilities to ensure app is usable: 10% for detail view, 1% for list binding
@@ -50,7 +53,8 @@ class ProductViewModel : ViewModel() {
                 3 -> {
                     // Realistic NullPointerException: Repository returns null for an invalid ID
                     val product = repository.getProductById(-1)
-                    val nameLength = product!!.product_name.length
+                    val nameLength = product?.product_name?.length ?: 0
+                    if (product == null) throw NullPointerException("Product not found for id -1")
                 }
                 4 -> {
                     // Realistic ConcurrentModificationException: Modifying list while iterating
