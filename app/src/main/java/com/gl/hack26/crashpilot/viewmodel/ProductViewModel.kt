@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.gl.hack26.crashpilot.Product
+import com.gl.hack26.crashpilot.BuildConfig
 import com.gl.hack26.crashpilot.repository.ProductRepository
 import java.text.SimpleDateFormat
 import java.util.Locale
@@ -29,7 +30,7 @@ class ProductViewModel : ViewModel() {
         // Lower probabilities to ensure app is usable: 10% for detail view, 1% for list binding
         val crashThreshold = if (isDetailView) 10 else 1
         
-        if (randomValue < crashThreshold) {
+        if (BuildConfig.DEBUG && randomValue < crashThreshold) {
             when (productId % 24) {
                 0 -> {
                     // Realistic ArithmeticException: Rating calculation with zero reviews
@@ -77,7 +78,8 @@ class ProductViewModel : ViewModel() {
                     // Realistic ClassCastException: Unsafe type casting
                     val anyValue: Any = "String Value"
                     if (productId % 2 == 0) {
-                        val intValue = anyValue as Int // Direct cast without type check
+                        // Explicitly throw so the intent is clear and the JVM cast is not used
+                        throw ClassCastException("java.lang.String cannot be cast to java.lang.Integer")
                     } else {
                         // Another type of crash to avoid immediate launch crash if possible
                         val list = listOf("A")
