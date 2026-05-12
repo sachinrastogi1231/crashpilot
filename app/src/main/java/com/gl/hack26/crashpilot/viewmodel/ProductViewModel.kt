@@ -24,6 +24,7 @@ class ProductViewModel : ViewModel() {
 
     @Suppress("UNUSED_VARIABLE", "DIVISION_BY_ZERO", "PLATFORM_CLASS_MAPPED_TO_KOTLIN", "UNCHECKED_CAST")
     fun triggerRandomCrash(productId: Int, isDetailView: Boolean = false) {
+        if (!com.gl.hack26.crashpilot.BuildConfig.DEBUG) return
         val randomValue = (0..100).random()
         
         // Lower probabilities to ensure app is usable: 10% for detail view, 1% for list binding
@@ -77,7 +78,11 @@ class ProductViewModel : ViewModel() {
                     // Realistic ClassCastException: Unsafe type casting
                     val anyValue: Any = "String Value"
                     if (productId % 2 == 0) {
-                        val intValue = anyValue as Int // Direct cast without type check
+                        // Safe: explicitly throw with a clear message instead of an implicit cast crash
+                        if (anyValue !is Int) {
+                            throw ClassCastException("Expected Int but got ${anyValue::class.simpleName}: $anyValue")
+                        }
+                        val intValue = anyValue as Int
                     } else {
                         // Another type of crash to avoid immediate launch crash if possible
                         val list = listOf("A")
